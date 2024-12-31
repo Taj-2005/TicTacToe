@@ -1,0 +1,92 @@
+body{
+    background-color: black;
+    text-align: center;
+}
+h1{
+    color: aqua;
+    font-family: "Permanent Marker";
+}
+#game{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.button{
+    background-color: yellow;
+    color: green;
+    margin-left: 1vw;
+    width: 30vw;
+    height: 5vh;
+    font-family: "Permanent Marker";
+    font-size: 3vh;
+}
+.cell:hover{
+    background-color:white;
+}
+.button:hover{
+    background-color: brown;
+}
+#undo:hover{
+    background-color: darkgoldenrod;
+}
+#gameBoard{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    margin: auto;
+    width: 36vw;
+}
+.cell{
+    width: 12vw;
+    height: 12vw;
+    background-color: bisque;
+    border: 1px solid red;
+    font-family: "Permanent Marker";
+    text-align: center;
+    font-size: 8vw;
+}
+
+@media (min-width:738px) and (max-width:992px){
+    #gameBoard{
+        width: 72vw;
+    }
+    .cell{
+        width: 24vw;
+        height: 24vw;
+        font-size: 20vw;
+    }
+    .button{
+        margin-top: 10vw;
+        margin-left: 1vw;
+        width: 72vw;
+    }
+}
+@media (max-width:738px){
+    #gameBoard{
+        width: 84vw;
+    }
+    .cell{
+        width: 28vw;
+        height: 28vw;
+        font-size: 20vw;
+    }
+    .button{
+        margin-top: 10vw;
+        margin-left: 1vw;
+        width: 84vw;
+    }
+}
+@media (max-width:320px){
+    #gameBoard{
+        width: 72vw;
+    }
+    .cell{
+        width: 24vw;
+        height: 24vw;
+        font-size: 18vw;
+    }
+    .button{
+        width: 72vw;
+        margin-top: -vh;
+    }
+}

@@ -65,10 +65,12 @@ function checkWinner(){
 }
     if (roundWon){
         statusText.textContent = `${currentPlayer} wins!`;
+        statusText.style.fontSize = "4em";
         running = false;
     }
     else if (!options.includes("")){
         statusText.textContent = `Draw!`;
+        statusText.style.fontSize = "4em";
         running = false;
     }
     else{
@@ -82,6 +84,7 @@ function restartGame(){
     history = [];
     statusText.textContent = `${currentPlayer}'s turn`;
     cells.forEach(cell => cell.textContent = "");
+    statusText.style.fontSize = "2em";
     running = true;
 }
 
